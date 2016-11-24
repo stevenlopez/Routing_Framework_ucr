@@ -1,0 +1,15 @@
+{
+	"file_name": "test_sample",
+
+	"height": 11,
+	"width": 20,
+
+	"blockerList": [
+	{"name": "blocker1", "width": 10, "height": 8, "x": 0, "y": 0},
+	{"name": "blocker2", "width": 4, "height": 2, "x": 0, "y": 8}
+	],
+
+	"routeList": [
+	{"name": "route1", "source_x": 0, "source_y": 0, "sink_x": 1, "sink_y": 0}
+	]
+}
