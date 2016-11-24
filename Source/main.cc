@@ -65,5 +65,4 @@ int main(int argc,char* argv[]) {
         delete first_problem;
         std::cout << "DONE WITH EVERYTING \n";
         return 0;
-}
-"main.cc" 68L, 1935C                                                                                                                                                                                                               18,7-21       Top
+}                                                                                                                                                                                                              18,7-21       Top
