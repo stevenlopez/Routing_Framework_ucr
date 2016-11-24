@@ -63,6 +63,7 @@ int main(int argc,char* argv[]) {
         paths.clear();
 
         delete first_problem;
-        std::cout << "DONE WITH EVERYTING \n";
+        std::cout << "DONE WITH EVERYTHIN: \n";
         return 0;
-}                                                                                                                                                                                                              18,7-21       Top
+}
+
