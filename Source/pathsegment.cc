@@ -1,3 +1,15 @@
+
+Utilities::PathSegment::PathSegment(Point source, Point sink):
+        source(source.x,source.y),sink(sink.x,sink.y) {
+    update_length();
+}
+
+Utilities::PathSegment::PathSegment(int p1_x, int p1_y, int p2_x, int p2_y):
+        source(p1_x,p1_y),sink(p2_x,p2_y) {
+    update_length();
+}
+
+Utilities::PathSegment::~PathSegment() {
     /* Empty Destructor */
 }
 
@@ -44,16 +56,4 @@ void Utilities::PathSegment::print() {
         this->print_source();
         //print sink to source
     }
-}
-
-void Utilities::PathSegment::set_source(Point source) {
-    this->source = source;
-    update_length();
-}
-
-void Utilities::PathSegment::set_sink(Point sink) {
-    this->sink = sink;
-    update_length();
-}
-
-"pathsegment.cc" 101L, 2519C                                                                                                                                                                                                       97,4          Bot
+                                                                                                                                                                                                                                   49,4          72%
