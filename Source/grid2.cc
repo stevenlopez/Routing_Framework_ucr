@@ -404,7 +404,7 @@ while(source_found == false)//break when we find our source
 	    Point head(curr_x, curr_y);
 	    Point tail(curr_x, curr_y + 1);
 	    prev_dir = curr_dir;
-	    curr_dir = 3;
+	    curr_dir = 4;
 	    if((curr_dir != prev_dir) && (prev_dir != 0)){
 		Point top(-10, -10);
 		Point bottom(-10, -10);
@@ -473,7 +473,7 @@ vector<Path*> Grid2::test_algorithm(bool intersections) {
     std::cout << "(" << ending_x << "," << ending_y << ")" << endl;
 
     //node is in blocker or out of grid
-    if(grid2.at(starting_y).at(starting_x) == NULL)
+    if((grid2.at(starting_y).at(starting_x) == NULL) || ((starting_x == ending_x) && (starting_y == ending_y)))
     {
 	std::cout << "adding empty path source" << endl;
 	Path* curr_path = new Path();
