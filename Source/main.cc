@@ -56,4 +56,14 @@ int main(int argc,char* argv[]) {
                         //cout << paths.size() << endl;
                         cout << "Path " << i << ": ";
                         paths.at(i)->print();
+                        Path* temp = paths.at(i);
+                        delete temp;
+        }
+
+        paths.clear();
+
+        delete first_problem;
+        std::cout << "DONE WITH EVERYTING \n";
+        return 0;
+}
 "main.cc" 68L, 1935C                                                                                                                                                                                                               18,7-21       Top
